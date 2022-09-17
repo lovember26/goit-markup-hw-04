@@ -3,12 +3,13 @@
   --heading-color: #212121;
   --text-color: #757575;
   --icons-1-color: #afb1b8;
+  --icons-white: #fff;
 }
 body {
   font-family: "Roboto", sans-serif;
   color: var(--heading-color);
   letter-spacing: 00.03em;
-  background-color: #fff;
+  background-color: var(--icons-white);
 }
 
 h1,
@@ -128,7 +129,7 @@ ul {
   margin-right: auto;
   width: 696px;
 
-  color: #fff;
+  color: var(--icons-white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -137,7 +138,7 @@ ul {
 .hero-btn {
   padding: 10px 32px;
   background-color: var(--accent-color);
-  color: #fff;
+  color: var(--icons-white);
   font-family: inherit;
   cursor: pointer;
   font-weight: 700;
@@ -212,7 +213,7 @@ ul {
 }
 .team-item {
   padding-bottom: 30px;
-  background-color: #fff;
+  background-color: var(--icons-white);
   text-align: center;
   width: calc((100% - 90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -237,7 +238,7 @@ ul {
 .team-card-descr {
   padding-top: 30px;
   padding-bottom: 16px;
-  background-color: #fff;
+  background-color: var(--icons-white);
   border-radius: 0px 0px 4px 4px;
 }
 .team-name {
@@ -267,7 +268,7 @@ ul {
 
 .team-icon-link:hover,
 .team-icon-link:focus {
-  fill: #fff;
+  fill: var(--icons-white);
   background-color: var(--accent-color);
   border-radius: 50%;
 }
@@ -291,6 +292,7 @@ ul {
 .clients-link {
   display: block;
   height: 92px;
+  width: 170px;
   padding: 16px 32px;
   fill: var(--icons-1-color);
   border: 1px solid #afb1b8;
@@ -315,10 +317,10 @@ address {
   margin-top: 20px;
 }
 .logo-end-footer {
-  color: #fff;
+  color: var(--icons-white);
 }
 .footer-list-item {
-  color: #fff;
+  color: var(--icons-white);
   font-size: 14px;
   line-height: 1.7;
 
@@ -339,11 +341,11 @@ address {
 }
 .footer-contacts-social-heading {
   font-size: 14px;
-  line-height: 1.1px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--icons-white);
   margin-bottom: 20px;
 }
 .footer-contacts-social-list {
@@ -353,7 +355,7 @@ address {
 .footer-contacts-social-link {
   display: block;
   padding: 12px;
-  fill: #fff;
+  fill: var(--icons-white);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 44px;
@@ -365,8 +367,11 @@ address {
 }
 .footer-wrapper {
   display: flex;
-  gap: 70px;
+
   align-items: baseline;
+}
+.footer-contacts-social {
+  margin-left: 70px;
 }
 
 /* Styles porfolio */
@@ -400,7 +405,7 @@ address {
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  color: #fff;
+  color: var(--icons-white);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
